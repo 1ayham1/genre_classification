@@ -1,1 +1,15 @@
 
+# ML Pipeline
+An end to end machine learning classification model trained using Random Forest.
+
+## Debugging.  
+* When developing, you can override the parameter ``main.execute_steps`` to only execute one or
+  more steps of the pipeline, instead of the entire pipeline. 
+  For example, this only executes the ``random_forest`` step:
+  ```bash
+  mlflow run . -P hydra_options="main.execute_steps='random_forest'"
+  ```
+  and this executes ``download`` and ``preprocess``:
+  ```bash
+  mlflow run . -P hydra_options="main.execute_steps='download,preprocess'"
+  ```
