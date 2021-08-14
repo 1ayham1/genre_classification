@@ -13,3 +13,11 @@ An end to end machine learning classification model trained using Random Forest.
   ```bash
   mlflow run . -P hydra_options="main.execute_steps='download,preprocess'"
   ```
+
+## Pipeline Graphical Overview
+![graph](./images/graphical_view.JPG)
+
+## Sample Output
+**Feature Importance**
+
+![features](./images/feature_importance_0_f1fd3194.png)

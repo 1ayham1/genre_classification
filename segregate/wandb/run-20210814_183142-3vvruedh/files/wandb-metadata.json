@@ -1,0 +1,35 @@
+{
+    "os": "Linux-4.4.0-19041-Microsoft-x86_64-with-glibc2.31",
+    "python": "3.9.6",
+    "heartbeatAt": "2021-08-14T16:31:43.833954",
+    "startedAt": "2021-08-14T16:31:42.103542",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--input_artifact",
+        "preprocessed_data.csv:latest",
+        "--artifact_root",
+        "data",
+        "--artifact_type",
+        "segregated_data",
+        "--test_size",
+        "0.3",
+        "--random_state",
+        "42",
+        "--stratify",
+        "genre"
+    ],
+    "state": "running",
+    "program": "/mnt/c/Users/Ayham/Desktop/2021_ND_Programs/2021_ND_MLDevOps/L3_Building a Reproducible Model Workflow/genre_classification/segregate/run.py",
+    "codePath": "segregate/run.py",
+    "git": {
+        "remote": "https://github.com/1ayham1/genre_classification.git",
+        "commit": "9740abf1973478067cca523c20d83b5e7aed0fd1"
+    },
+    "email": null,
+    "root": "/mnt/c/Users/Ayham/Desktop/2021_ND_Programs/2021_ND_MLDevOps/L3_Building a Reproducible Model Workflow/genre_classification",
+    "host": "azhp",
+    "username": "ayham",
+    "executable": "/home/ayham/miniconda3/envs/mlflow-b536c99cab3f07bfeb0a1ad9e153575c07cd087e/bin/python"
+}

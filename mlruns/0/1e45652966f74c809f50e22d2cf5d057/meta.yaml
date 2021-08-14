@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/c/Users/Ayham/Desktop/2021_ND_Programs/2021_ND_MLDevOps/L3_Building%20a%20Reproducible%20Model%20Workflow/genre_classification/mlruns/0/1e45652966f74c809f50e22d2cf5d057/artifacts
+end_time: 1628958765385
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 1e45652966f74c809f50e22d2cf5d057
+run_uuid: 1e45652966f74c809f50e22d2cf5d057
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1628958725140
+status: 3
+tags: []
+user_id: ayham
