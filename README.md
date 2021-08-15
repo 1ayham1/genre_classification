@@ -21,3 +21,9 @@ An end to end machine learning classification model trained using Random Forest.
 **Feature Importance**
 
 ![features](./images/feature_importance_0_f1fd3194.png)
+
+## Run the release
+
+`mlflow run https://github.com/1ayham1/genre_classification.git \ 
+             -v 1.0.0 \
+             -P hydra_options="main.project_name=remote_execution"`
