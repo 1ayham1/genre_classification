@@ -1,0 +1,35 @@
+{
+    "os": "Linux-4.4.0-19041-Microsoft-x86_64-with-glibc2.10",
+    "python": "3.8.10",
+    "heartbeatAt": "2021-08-15T19:09:36.076862",
+    "startedAt": "2021-08-15T19:09:33.965083",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--train_data",
+        "data_train.csv:latest",
+        "--model_config",
+        "/mnt/c/Users/Ayham/Desktop/2021_ND_Programs/2021_ND_MLDevOps/L3_Building a Reproducible Model Workflow/genre_classification/outputs/2021-08-15/21-07-55/random_forest_config.yml",
+        "--export_artifact",
+        "model_export",
+        "--random_seed",
+        "42",
+        "--val_size",
+        "0.3",
+        "--stratify",
+        "genre"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePath": "random_forest/run.py",
+    "git": {
+        "remote": "https://github.com/1ayham1/genre_classification.git",
+        "commit": "f596a155084017c1f5a7e3616491c65d4615bab2"
+    },
+    "email": "learn.ayham@zoho.com",
+    "root": "/mnt/c/Users/Ayham/Desktop/2021_ND_Programs/2021_ND_MLDevOps/L3_Building a Reproducible Model Workflow/genre_classification",
+    "host": "azhp",
+    "username": "ayham",
+    "executable": "/home/ayham/miniconda3/envs/mlflow-e38a66e56027dd29fa4c051140d2b45993a7fa9c/bin/python"
+}
