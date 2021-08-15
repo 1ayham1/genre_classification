@@ -34,14 +34,34 @@ then change artifact release alias to prod.
 ## Deployment
 `wandb artifact get genre_classification_prod/model_export:prod --root model`
 
-### Offline inference
+Get artificate for testing:
+
 ` wandb artifact get genre_classification_prod/data_test.csv:latest `
 
-then
+### Offline inference
+
 ```
-mlflow models predict \
-                -t csv \
-                -i ./artifacts/data_test.csv:v0/data_test.csv \
-                -m model
+mlflow models predict -t csv -i ./artifacts/data_test.csv:v0/data_test.csv -m model
 ```
+
+### Online inference
+set a RESTful API
+```
+mlflow models serve -m model &
+```
+open jupyter and test
+
+```
+import requests
+import json
+
+with open("model/input_example.json") as fp:
+    data = json.load(fp)
+
+results = requests.post("http://localhost:5000/invocations", json=data)
+
+print(results.json())
+
+```
+
 
